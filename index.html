@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Construccion de aplicaciones para internet</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+  </head>
+  <body>
+    <h1>Clinica Pura Vida</h1>
+
+    <h2>Nuestors servicios y precios (Eur/sesión)</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Genero/Servicios</th>
+          <th>Masaje</th>
+          <th>Depilacion Laser</th>
+          <th>Rehabilitacion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mujeres</td>
+          <td>30</td>
+          <td>60</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Hombres</td>
+          <td>50</td>
+          <td>100</td>
+          <td>80</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Introduzca su usuario y contraseña</h3>
+
+    <form
+      action="javascript:window.location.href='https://www.google.es';"
+      method="POST"
+      id="form1"
+    >
+      <label id="usuario-label" for="usuario">Usuario:</label>
+      <input
+        id="usuario"
+        type="text"
+        required
+        placeholder="Escriba su Usuario"
+        name="usuario"
+      />
+      <label id="password-label" for="password">Contraseña:</label>
+      <input
+        id="password"
+        type="password"
+        required
+        placeholder="Escriba su contraseña"
+        size="10"
+        name="password"
+      />
+      <label id="passwordRepeat-label" for="passwordRepeat"
+        >Repita su Contraseña:</label
+      >
+      <input
+        id="passwordRepeat"
+        type="password"
+        required
+        placeholder="Repita su contraseña"
+        size="10"
+        name="passwordRepeat"
+      />
+      <input type="submit" />
+    </form>
+    <span></span>
+    <h3>Introduzca sus datos</h3>
+    <form
+      action="javascript:window.location.href='https://www.google.es';"
+      method="POST"
+      id="form2"
+    >
+      <label id="nombre-label" for="nombre">Nombre y Apellidos:</label>
+      <input
+        id="nombre"
+        type="text"
+        required
+        placeholder="Escriba su Nombre y Apelidos"
+        value=""
+        name="nombre"
+      />
+
+      <label id="direccion-label" for="direccion">Dirección:</label>
+      <input
+        id="direccion"
+        name="direccion"
+        type="text"
+        required
+        placeholder="Escriba su dirección"
+        value=""
+      />
+
+      <label id="email-label" for="email">Email:</label>
+      <input
+        id="email"
+        name="email"
+        type="text"
+        required
+        placeholder="Escriba su email"
+      />
+
+      <input type="submit" />
+    </form>
+
+    <div>
+      <button>Serializar</button>
+      <p id="resultado"></p>
+    </div>
+    <script src="scriptJQuery.js"></script>
+  </body>
+</html>
